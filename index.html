@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS PRODUKT j.d.o.o. | Advertising & Marketing</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #111;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f2a900;
+        }
+
+        section {
+            padding: 100px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        h1, h2 {
+            color: #f2a900;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+        }
+
+        .image-right img, .image-left img {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .image-right {
+            flex-direction: row;
+        }
+
+        .image-left {
+            flex-direction: row-reverse;
+        }
+
+        .text {
+            width: 50%;
+        }
+
+        .services, .advantages, .process {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .service-item, .advantage-item, .process-step {
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 70%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #f2a900;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #fff;
+        }
+
+        .contact-block {
+            background: url('https://images.unsplash.com/photo-1521790366321-3e320d5a6f91?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+
+        .contact-block::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .contact-content {
+            position: relative;
+            z-index: 2;
+            text-align: left;
+            padding: 150px 10%;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #000;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Početna</a>
+        <a href="#about">O nama</a>
+        <a href="#services">Usluge</a>
+        <a href="#advantages">Prednosti</a>
+        <a href="#process">Proces</a>
+        <a href="#contact-form">Kontakt</a>
+        <a href="#contacts">Info</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>DS PRODUKT j.d.o.o.</h1>
+            <p>Mi smo kreativna agencija koja povezuje ideje, podatke i dizajn u snažan marketinški rezultat. Naš tim stvara strategije koje povećavaju vidljivost brendova, jačaju reputaciju i donose stvarne poslovne rezultate.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="image-right">
+        <div class="text">
+            <h2>Tko smo mi</h2>
+            <p>DS PRODUKT j.d.o.o. okuplja stručnjake iz područja oglašavanja, digitalnog marketinga i SEO optimizacije. Naš pristup temelji se na razumijevanju tržišta i ponašanja potrošača, čime gradimo brendove koji se ističu autentičnošću i povjerenjem. Uvijek tražimo inovativne načine kako bi naši klijenti ostvarili maksimalan učinak uz minimalan trošak. Kombiniramo kreativnost, analitiku i tehnologiju kako bismo postigli mjerljive rezultate.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Naše Usluge</h2>
+        <div class="service-item">
+            <h3>Digitalno oglašavanje</h3>
+            <p>Planiramo i provodimo kampanje koje ciljaju pravu publiku u pravom trenutku. Koristimo podatke i kreativne koncepte kako bismo povećali doseg i ROI vašeg brenda.</p>
+        </div>
+        <div class="service-item">
+            <h3>SEO & Optimizacija</h3>
+            <p>Optimiziramo vaše web stranice za tražilice i korisnike. Naš cilj je postaviti vaš brend na vrh Google pretraga i osigurati dugoročan organski rast.</p>
+        </div>
+        <div class="service-item">
+            <h3>Konzultacije o brendu</h3>
+            <p>Razvijamo jasnu strategiju brenda – od pozicioniranja do komunikacije. Pomažemo vam da vaš brend ima glas koji se čuje i prepoznaje na tržištu.</p>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages">
+        <h2>Zašto Odabrati Nas</h2>
+        <div class="advantage-item">
+            <h3>Individualni pristup</h3>
+            <p>Svaki projekt tretiramo kao jedinstvenu priču, s rješenjima krojenim po mjeri vašeg poslovanja i ciljeva.</p>
+        </div>
+        <div class="advantage-item">
+            <h3>Stručnost i iskustvo</h3>
+            <p>Naš tim okuplja stručnjake s dugogodišnjim iskustvom u digitalnom marketingu, SEO-u i brend strategiji.</p>
+        </div>
+        <div class="advantage-item">
+            <h3>Rezultati koji se mjere</h3>
+            <p>Ne vjerujemo u prazne riječi — svaka naša kampanja ima jasne metrike, analitiku i dokazane rezultate.</p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <h2>Kako Radimo</h2>
+        <div class="process-step">
+            <h3>1. Analiza i strategija</h3>
+            <p>Detaljno proučavamo vašu industriju i publiku kako bismo definirali jasan plan djelovanja.</p>
+        </div>
+        <div class="process-step">
+            <h3>2. Kreativna realizacija</h3>
+            <p>Na temelju strategije razvijamo sadržaje, kampanje i dizajn koji komuniciraju vašu priču.</p>
+        </div>
+        <div class="process-step">
+            <h3>3. Optimizacija i rast</h3>
+            <p>Pratimo rezultate, optimiziramo kampanje i kontinuirano poboljšavamo performanse za dugoročni uspjeh.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form">
+        <h2>Pošaljite Nam Poruku</h2>
+        <p>Imate projekt, ideju ili jednostavno pitanje? Javite nam se — odgovaramo brzo i konkretno.</p>
+        <form>
+            <input type="text" placeholder="Vaše ime" required><br>
+            <input type="email" placeholder="Vaš email" required><br>
+            <textarea rows="5" placeholder="Poruka..." required></textarea><br>
+            <button type="submit">Pošalji Poruku</button>
+        </form>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contacts" class="contact-block">
+        <div class="contact-content">
+            <h2>Ostanimo u Kontaktu</h2>
+            <p>Želite surađivati s nama ili imate ideju koju želite razviti? Javite nam se putem e-maila i započnimo nešto veliko zajedno.</p>
+            <p><strong>Email:</strong> <a href="mailto:inbox@dsprodukt.org" style="color:#f2a900;">inbox@dsprodukt.org</a></p>
+            <p><strong>Adresa:</strong> Ulica Sapci 64, 35212 Sapci</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 DS PRODUKT j.d.o.o. | Sva prava pridržana.
+    </footer>
+
+</body>
+</html>
